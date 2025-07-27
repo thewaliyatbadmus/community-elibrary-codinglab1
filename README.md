@@ -39,12 +39,20 @@ This project was created as a final assignment for a Python course to practice:
 ## How to Run the App
 
 1. Clone or download the project:
+```
 git clone https://github.com/thewaliyatbadmus/community-elibrary-codinglab1
 cd community-elibrary-codinglab1
-2. Start the application:
-   ```
-   py main.py
-   ```
-Support
+```
 
-This application is designed for educational purposes and community use.
+2. Start the application:
+```
+py main.py
+ ```
+## Support
+
+This application is designed for educational purposes and community use. 
+
+## License
+
+This project is open source and available for educational and community use.
+
