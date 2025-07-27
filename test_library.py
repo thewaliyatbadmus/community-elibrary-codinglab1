@@ -66,4 +66,14 @@ class TestAdminRemoveUser(unittest.TestCase):
         '3',        # choose option 3: Remove User
         '1'         # select user #1 to remove
     ])
-    
+     def test_remove_user(self, mock_input, mock_save_users, mock_load_users):
+        # Pretend there is one user to remove
+        mock_load_users.return_value = [{'username': 'remove_me'}]
+
+        # Run the manage_users function again
+        admin.manage_users()
+
+        # Check that save_users was called with empty list
+        mock_save_users.assert_called_once()
+        updated_users = mock_save_users.call_args[0][0]
+        self.assertEqual(updated_users, [])  # List should be empty after removal
