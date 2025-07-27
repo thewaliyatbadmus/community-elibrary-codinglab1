@@ -3,8 +3,8 @@
 ## Project Overview
 
 This is a simple Library Management System built with Python and used through the Command Line Interface (CLI). It allows two types of users:
-- Students: Can search for books and borrow them
-- Admins: Can add books and manage the library
+- Students
+- Admin
 
 This project was created as a final assignment for a Python course to practice:
 - Python functions
@@ -18,20 +18,33 @@ This project was created as a final assignment for a Python course to practice:
 ## Features
 
 ### Student Features
-- Search for available books
+- Browse categories
+- Search library
+- User registration
 - Borrow books if available
 
 ### Admin Features
-- Add new books to the library
-- View all books
+- Add new resources
+- Edit resources
+- Delete resources
+- user management
 
 ### Storage
-- Books and borrowing information are stored in a file (such as `library.json` or `.txt`)
+- User data stored in JSON format
+- Book data stored in JSON format
+- All data stored locally (offline-first approach)
 
 ---
 
 ## How to Run the App
 
 1. Clone or download the project:
-git clone https://github.com/your-username/library-management-system.git
-cd library-management-system
+git clone https://github.com/thewaliyatbadmus/community-elibrary-codinglab1
+cd community-elibrary-codinglab1
+2. Start the application:
+   ```
+   py main.py
+   ```
+Support
+
+This application is designed for educational purposes and community use.
