@@ -56,3 +56,14 @@ class TestAdminAddUser(unittest.TestCase):
         mock_save_users.assert_called_once()
         saved_users = mock_save_users.call_args[0][0]
         self.assertEqual(saved_users[0]['username'], 'new_user123')
+
+# Testing Remove User
+
+class TestAdminRemoveUser(unittest.TestCase):
+    @patch('admin.load_users')
+    @patch('admin.save_users')
+    @patch('builtins.input', side_effect=[
+        '3',        # choose option 3: Remove User
+        '1'         # select user #1 to remove
+    ])
+    
