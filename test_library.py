@@ -77,3 +77,7 @@ class TestAdminRemoveUser(unittest.TestCase):
         mock_save_users.assert_called_once()
         updated_users = mock_save_users.call_args[0][0]
         self.assertEqual(updated_users, [])  # List should be empty after removal
+
+# Run the tests only if this file is executed directly
+if _name_ == '_main_':
+    unittest.main()
