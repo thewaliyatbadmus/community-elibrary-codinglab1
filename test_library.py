@@ -35,3 +35,24 @@ class TestAdminAddBook(unittest.TestCase):
         # Now check the content
         self.assertEqual(saved_books[0]['title'], 'Python Basics')
         self.assertEqual(saved_books[0]['author'], 'Alice Walker')
+
+# Testing Add User
+
+class TestAdminAddUser(unittest.TestCase):
+    @patch('admin.load_users')
+    @patch('admin.save_users')
+    @patch('builtins.input', side_effect=[
+        '2',            # choose option 2: Add User
+        'new_user123'   # new user's name
+    ])
+    def test_add_user(self, mock_input, mock_save_users, mock_load_users):
+        # Pretend there are no users yet
+        mock_load_users.return_value = []
+
+        # Call the function that manages users
+        admin.manage_users()
+
+        # Make sure a user was added
+        mock_save_users.assert_called_once()
+        saved_users = mock_save_users.call_args[0][0]
+        self.assertEqual(saved_users[0]['username'], 'new_user123')
