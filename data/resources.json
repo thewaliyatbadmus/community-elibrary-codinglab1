@@ -1,0 +1,18 @@
+[
+    {
+        "id": "book101",
+        "title": "Python for Beginners",
+        "author": "John Doe",
+        "subject": "Programming",
+        "language": "English",
+        "filepath": "resources/python_beginners.pdf"
+    },
+    {
+        "id": "book101",
+        "title": "Python for Beginners",
+        "author": "John Doe",
+        "subject": "Programming",
+        "language": "English",
+        "filepath": "resources/python_beginners.pdf"
+    }
+]
