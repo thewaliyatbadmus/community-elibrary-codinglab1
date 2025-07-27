@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "student_id": "admin",
+      "name": "System Administrator",
+      "email": "admin@library.com",
+      "user_type": "admin",
+      "borrowed_books": [],
+      "favorites": [],
+      "registration_date": "2025-07-27T08:41:35.423985"
+    },
+    {
+      "student_id": "1",
+      "name": "sonia",
+      "email": "sonia@gmail.com",
+      "user_type": "student",
+      "borrowed_books": [],
+      "favorites": [],
+      "registration_date": "2025-07-27T08:42:04.643227"
+    }
+  ]
+}

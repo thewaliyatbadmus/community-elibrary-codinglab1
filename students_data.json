@@ -1,0 +1,12 @@
+{
+  "students": [
+    {
+      "student_id": "1",
+      "name": "Soniah",
+      "email": "soniah@gmail.com",
+      "borrowed_books": [],
+      "favorites": [],
+      "registration_date": "2025-07-27T08:11:29.614962"
+    }
+  ]
+}
