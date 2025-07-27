@@ -45,6 +45,11 @@ cd community-elibrary-codinglab1
    ```
    py main.py
    ```
-Support
+## Support
 
-This application is designed for educational purposes and community use.
+This application is designed for educational purposes and community use. 
+
+## License
+
+This project is open source and available for educational and community use.
+
