@@ -45,9 +45,9 @@ cd community-elibrary-codinglab1
 ```
 
 2. Start the application:
-   ```
-   py main.py
-   ```
+```
+py main.py
+ ```
 ## Support
 
 This application is designed for educational purposes and community use. 
