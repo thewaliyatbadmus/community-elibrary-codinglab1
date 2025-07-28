@@ -1,0 +1,16 @@
+# ignore vscode
+.vscode/
+# ignore .json files
+*.json
+
+# ignore downloads folder
+downloads/
+
+# ignore python env folders
+lib-env/
+
+# ignore library_data.json
+library_data.json
+
+# ignore python cache
+__pycache__/
